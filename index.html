@@ -44,48 +44,6 @@
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-
-        .name-header {
-            cursor: pointer;
-            padding: 10px;
-            background: #f8fafc;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .feedback-content {
-            display: none;
-            padding: 15px;
-            margin-top: 10px;
-        }
-
-        .feedback-item {
-            border-left: 4px solid #2563eb;
-            padding: 15px;
-            margin: 10px 0;
-            background: #f8fafc;
-        }
-
-        .expanded .feedback-content {
-            display: block;
-        }
-
-        .timestamp {
-            font-size: 0.9em;
-            color: #64748b;
-        }
-
-        .question {
-            font-weight: bold;
-            color: #1e40af;
-            margin: 5px 0;
-        }
-
-        .feedback-text {
-            white-space: pre-wrap;
-        }
     </style>
 </head>
 <body>
@@ -96,32 +54,8 @@
         </div>
         <div id="feedback-list">
             <script>
-                let feedbackData = {
-  "Test Student": [
-    {
-      "timestamp": "04/11/2024, 4:05:13 am",
-      "question": "How does the author use imagery?",
-      "feedback": "This is a test feedback entry to verify the system is working correctly."
-    }
-  ]
-};
+                let feedbackData = {};
             </script>
-            
-                    <div class="feedback-section" id="section-0">
-                        <div class="name-header" onclick="this.parentElement.classList.toggle('expanded')">
-                            <h2>Test Student</h2>
-                        </div>
-                        <div class="feedback-content">
-                            
-                                    <div class="feedback-item">
-                                        <div class="timestamp">04/11/2024, 4:05:13 am</div>
-                                        <div class="question">Q: How does the author use imagery?</div>
-                                        <div class="feedback-text">This is a test feedback entry to verify the system is working correctly.</div>
-                                    </div>
-                                
-                        </div>
-                    </div>
-                
         </div>
     </div>
 </body>
